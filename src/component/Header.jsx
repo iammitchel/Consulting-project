@@ -18,7 +18,7 @@ const Header = () => {
           >
             <img src={THH} alt="" />
             <div className="text">
-              <h2>S Kaba Consulting</h2>
+              <h2> Ten Fibre Consulting</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
@@ -31,17 +31,17 @@ const Header = () => {
             <NavLink style={{ textDecoration: "none" }} to="/">
               <h5>Home</h5>
             </NavLink>
-            <NavLink style={{ textDecoration: "none" }} to="/about">
+            <NavLink style={{ textDecoration: "none" }} to="/services">
               <h5>Services</h5>
             </NavLink>
-            <NavLink style={{ textDecoration: "none" }} to="/programs">
+            <NavLink style={{ textDecoration: "none" }} to="/about">
               <h5>About</h5>
             </NavLink>
             <NavLink style={{ textDecoration: "none" }} to="/challenges">
               <h5>Contact</h5>
             </NavLink>
           </div>
-          <div style={{marginTop:'15px'}}>
+          <div style={{ marginTop: "15px" }}>
             <FaLinkedinIn />
           </div>
         </div>

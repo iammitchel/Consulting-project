@@ -59,3 +59,282 @@
   font-weight: 400;
   font-family: 'proxima-nova', sans-serif;
 }
+
+/* HOME */
+#home{
+  background-color: #142474;
+  color: #fff;
+}
+
+#home-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+#content{
+  width: 45%;
+  padding: 100px;
+  }
+
+#content h1{
+  font-size: 40px;
+  font-family: 'proxima-nova', sans-serif;
+  margin-bottom: 30px;
+}
+
+#content p{
+  font-size: 16px;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+#video video{
+  width: 45vw;
+  background-size: cover;
+  padding: 0;
+  margin-bottom: 150px;
+}
+
+#services{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+
+#services div{
+  border: 1px solid;
+  padding: 30px;
+  width: 15%;
+  height: 500px;
+  text-align: center;
+  background-color: #fff;
+  color: #142474;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#services div h2{
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+
+
+#services button{
+  background-color: #142474;
+  color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+}
+
+#training img{
+  width: 100%;
+  height: 80vh;
+  filter: brightness(100%);
+}
+
+#contact-us{
+  background-color: #142474;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+#contact-us .contact-info h1{
+  margin-top: 60px;
+  font-size: 80px;
+  font-family: 'proxima-nova', sans-serif;
+}
+
+#contact-us .contact-info p{
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 60px;
+}
+
+#contact-us form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: none;
+}
+
+#contact-us form input{
+  background-color: transparent;
+  width: 500px;
+  padding: 20px;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: 'proxima-nova', sans-serif;
+}
+
+#contact-us form textarea{
+  background-color: transparent;
+  color: #fff;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  font-family: 'proxima-nova', sans-serif;
+  padding:10px;
+}
+
+::placeholder{
+  color: #fff;
+  font-size: 15px;
+  font-family: 'proxima-nova', sans-serif;
+}
+
+#contact-us form input:hover{
+  border:1px solid #fff;
+}
+
+#contact-us form textarea:hover {
+  border: 1px solid #fff;
+}
+
+#contact-us button{
+  padding: 15px 50px;
+  margin-top: 20px;
+  margin-left: 70%;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#contact-us button:hover{
+  background-color: rgb(100, 97, 97);
+  color: #fff;
+}
+
+#footer{
+  background-color: rgb(245, 241, 237);
+  padding: 50px;
+  text-align: center;
+}
+
+/* SERVICE PAGE */
+
+#service{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#service .service-text{
+  background-color: #142474;
+  color: #fff;
+  width: 50%;
+  height: 50vh;
+  padding: 150px 190px;
+}
+
+#service .service-text h1{
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'proxima-nova', sans-serif;
+  margin-bottom: 20px;
+}
+
+#service .service-text p{
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'proxima-nova', sans-serif;
+  line-height: 30px;
+}
+
+#service .service-img{
+  width: 50%;
+}
+
+#service .service-img img{
+  width: 100%;
+  height: 50vh;
+}
+
+#service2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#service2 .service-text {
+  background-color: #fff;
+  color: #1b32a0;
+  width: 50%;
+  height: 70vh;
+  padding: 150px 190px;
+}
+
+#service2 .service-text h1 {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'proxima-nova', sans-serif;
+  margin-bottom: 20px;
+}
+
+#service2 .service-text p {
+  font-size: 15px;
+  font-weight: 100;
+  font-family: 'proxima-nova', sans-serif;
+  line-height: 30px;
+  margin-bottom: 80px;
+}
+
+#service2 .service-img {
+  width: 50%;
+  /* filter: brightness(30%); */
+}
+
+#service2 .service-img img {
+  width: 100%;
+  height: 70vh;
+}
+
+#service2 .service-text button{
+  padding: 15px 20px;
+  background-color: #1b32a0;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+/* ABOUT */
+
+#about{
+  background-color: #142474;
+  color: #fff;
+  width: 100%;
+  height: 130vh;
+  text-align: center;
+  padding: 100px 500px;
+}
+
+#about h1{
+  font-size: 60px;
+  font-weight: 800;
+  font-family: 'proxima-nova', sans-serif;
+  margin-bottom: 50px;
+}
+
+#about p{
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+#about button{
+  padding: 20px 40px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#about button:hover{
+  background-color: rgb(218, 216, 215);
+}
