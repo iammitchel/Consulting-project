@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './Header'
+import { HashLink } from "react-router-hash-link";
 
 const about = () => {
   return (
@@ -42,7 +43,9 @@ const about = () => {
           expertise to navigate challenges, seize opportunities, and drive
           transformative success.
         </p>
-        <button>Get in touch</button>
+        <HashLink to="/#contact-us" smooth style={{ textDecoration: "none" }}>
+          <button>Get in Touch</button>
+        </HashLink>
       </section>
       <section id="footer">
         <p>©2023 by Ten Fibre Consulting</p>

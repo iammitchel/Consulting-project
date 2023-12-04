@@ -41,6 +41,7 @@
   background-color: #142474;
   color: #fff;
   margin-top: 20px;
+  cursor: pointer;
  }
 
  #header2 {
@@ -104,10 +105,9 @@
 
 
 #services div{
-  border: 1px solid;
   padding: 30px;
   width: 15%;
-  height: 500px;
+  height: 450px;
   text-align: center;
   background-color: #fff;
   color: #142474;
@@ -115,7 +115,7 @@
 }
 
 #services div h2{
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 40px;
 }
 
@@ -126,6 +126,7 @@
   padding: 15px;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 }
 
 #training img{
@@ -139,12 +140,12 @@
   color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 80px;
+  padding: 30px;
 }
 
 #contact-us .contact-info h1{
   margin-top: 60px;
-  font-size: 80px;
+  font-size: 70px;
   font-family: 'proxima-nova', sans-serif;
 }
 
@@ -181,6 +182,7 @@
   border-top: none;
   font-family: 'proxima-nova', sans-serif;
   padding:10px;
+  height: 150px;
 }
 
 ::placeholder{
@@ -195,6 +197,16 @@
 
 #contact-us form textarea:hover {
   border: 1px solid #fff;
+}
+
+#contact-us form input[type="submit"] {
+  margin-top: 2rem;
+  cursor: pointer;
+  background: #fff;
+  color: #142474;
+  border: none;
+  width: 30%;
+  margin-left: 350px;
 }
 
 #contact-us button{
@@ -300,6 +312,7 @@
   color: #fff;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 /* ABOUT */
@@ -337,4 +350,41 @@
 
 #about button:hover{
   background-color: rgb(218, 216, 215);
+}
+
+#training {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#training .service-text {
+  background-color: #fff;
+  color: #142474;
+  width: 50%;
+  height: 50vh;
+  padding: 150px 190px;
+}
+
+#training .service-text h1 {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'proxima-nova', sans-serif;
+  margin-bottom: 20px;
+}
+
+#training .service-text p {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'proxima-nova', sans-serif;
+  line-height: 30px;
+}
+
+#training .service-img {
+  width: 50%;
+}
+
+#training .service-img img {
+  width: 100%;
+  height: 50vh;
 }

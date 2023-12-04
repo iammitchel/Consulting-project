@@ -1,17 +1,43 @@
-import React from 'react'
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./index.css";
-import video from "../img/1.mp4"
-import img from "../img/consulting.jpg"
+import video from "../img/1.mp4";
+import service1 from "../img/service1.jpg";
 import { FaBusinessTime } from "react-icons/fa6";
 import { GiArchiveResearch } from "react-icons/gi";
 import { IoIosBusiness } from "react-icons/io";
 import { FcBusinessman } from "react-icons/fc";
 import { TbCalendarDue } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
-import Header from './Header'
+import Header from "./Header";
 
 const Home = () => {
-  const style = { fontSize: "680%"};
+  const form = useRef("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_muifqqg",
+        "template_hbsabcn",
+        form.current,
+        "SH_wEedln_lHQZt93"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          form.current.reset();
+        }
+      );
+  };
+
+  const style = { fontSize: "680%" };
   return (
     <div>
       <Header />
@@ -47,58 +73,81 @@ const Home = () => {
         <div>
           <FaBusinessTime style={style} />
           <h2>Business plan preparation </h2>
-          <button>Learn More</button>
+          <Link to="/services">
+            <button>Learn More</button>
+          </Link>
         </div>
         <div>
           <GiArchiveResearch style={style} />
           <h2>Research report preparation </h2>
-          <button>Learn More</button>
+          <Link to="/services">
+            <button>Learn More</button>
+          </Link>
         </div>
         <div>
           <IoIosBusiness style={style} />
-          <h2 style={{ marginTop: "120px" }}>
+          <h2 style={{ marginTop: "70px" }}>
             Financial modelling and valuation{" "}
           </h2>
-          <button>Learn More</button>
+          <Link to="/services">
+            <button>Learn More</button>
+          </Link>
         </div>
         <div>
           <FcBusinessman style={style} />
-          <h2 style={{ marginTop: "120px" }}>
+          <h2 style={{ marginTop: "70px" }}>
             Investor and corporate presentations{" "}
           </h2>
-          <button>Learn More</button>
+          <Link to="/services">
+            <button>Learn More</button>
+          </Link>
         </div>
         <div>
           <TbCalendarDue style={style} />
           <h2>Company Due Diligence </h2>
-          <button>Learn More</button>
+          <Link to="/services">
+            <button>Learn More</button>
+          </Link>
         </div>
       </section>
       <section id="training">
-        <img src={img} alt="" />
+        <div className="service-text">
+          <h1>Corporate Trainings:</h1>
+          <p>
+            • Business Plan Trainings <br />
+            • Financial Modelling Trainings <br />• Microsoft
+            Office Suite Trainings
+          </p>
+        </div>
+        <div className="service-img">
+          <img src={service1} alt="" />
+        </div>
       </section>
 
       <section id="contact-us">
         <div className="contact-info">
           <h1>Contact Us</h1>
           <p>info@tenfibreconsulting.com</p>
-          <p>+23480….</p>
+          <p>+234 703 129 2497</p>
+          <p>
+            <b>Address:</b> 7, HARUNA STREET, KARU, ABUJA-FCT, Nigeria.
+          </p>
         </div>
         <div>
-          <form action="">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Phone" />
-            <input type="text" placeholder="Subject" />
-            <textarea
-              name=""
-              placeholder="Type your message here"
-              id=""
-              cols="30"
-              rows="10"
-            ></textarea>
+          <form ref={form} onSubmit={sendEmail}>
+            {/* <label>Name</label> */}
+            <input type="text" name="user_name" placeholder="Name" />
+            {/* <label>Email</label> */}
+            <input type="email" name="user_email" placeholder="Email" />
+            {/* <label>Subject</label> */}
+            <input type="text" name="user_subject" placeholder="Subject" />
+            {/* <label>Phone</label> */}
+            <input type="phone" name="user_number" placeholder="Phone" />
+            {/* <label>Message</label> */}
+            <textarea name="message" placeholder="Message" />
+            <input type="Submit" value="Send" />
           </form>
-          <button>Submit</button>
+          {/* <button>Submit</button> */}
         </div>
       </section>
 
@@ -107,6 +156,6 @@ const Home = () => {
       </section>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;

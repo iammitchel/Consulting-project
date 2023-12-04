@@ -4,7 +4,16 @@ import { NavLink } from "react-router-dom";
 import { FaLinkedinIn } from "react-icons/fa6";
 import "@fontsource/poppins";
 import THH from '../img/THH.jpeg'
+import { HashLink } from "react-router-hash-link";
 const Header = () => {
+
+  function handleScroll() {
+    window.scroll({
+      top: document.body.offsetHeight,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <>
       <section id="header" className="section-p1">
@@ -19,11 +28,11 @@ const Header = () => {
             <img src={THH} alt="" />
             <div className="text">
               <h2> Ten Fibre Consulting</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Stay ahead with our suite of consulting services</p>
             </div>
           </div>
           <div>
-            <button>Get In Touch</button>
+            <button onClick={handleScroll}>Get In Touch</button>
           </div>
         </div>
         <div id="header2">
@@ -37,9 +46,17 @@ const Header = () => {
             <NavLink style={{ textDecoration: "none" }} to="/about">
               <h5>About</h5>
             </NavLink>
-            <NavLink style={{ textDecoration: "none" }} to="/challenges">
+            <HashLink to="/#contact-us" smooth style={{textDecoration:"none"}}>
               <h5>Contact</h5>
-            </NavLink>
+              </HashLink>
+
+            {/* <div onClick={handleScroll}
+            style={{cursor:'pointer'}}>
+              <h5>Contact</h5>
+            </div> */}
+            {/* <NavLink style={{ textDecoration: "none" }} to="/challenges">
+              <h5 >Contact</h5>
+            </NavLink> */}
           </div>
           <div style={{ marginTop: "15px" }}>
             <FaLinkedinIn />

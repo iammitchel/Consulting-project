@@ -1,7 +1,13 @@
 import React from 'react'
 import Header from './Header'
-import img from '../img/THH.jpeg'
+import service1 from "../img/service1.jpg";
+import service2 from "../img/service2.jpg";
+import service3 from "../img/service3.jpg";
+import service4 from "../img/service4.jpg";
+import service5 from "../img/service5.jpg";
+import service6 from "../img/service6.jpg";
 import "./index.css";
+import { HashLink } from "react-router-hash-link";
 
 const services = () => {
   return (
@@ -16,13 +22,13 @@ const services = () => {
           </p>
         </div>
         <div className="service-img">
-          <img src={img} alt="" />
+          <img src={service1} alt="" />
         </div>
       </section>
 
       <section id="service2">
         <div className="service-img">
-          <img src={img} alt="" />
+          <img src={service3} alt="" />
         </div>
         <div className="service-text">
           <h1>Business Plan Preparation:</h1>
@@ -37,7 +43,9 @@ const services = () => {
             aiming for growth, our business plans serve as dynamic roadmaps to
             guide your success.
           </p>
-          <button>Get in Touch</button>
+          <HashLink to="/#contact-us" smooth style={{ textDecoration: "none" }}>
+            <button>Get in Touch</button>
+          </HashLink>
         </div>
       </section>
       <section id="service2">
@@ -53,15 +61,17 @@ const services = () => {
             focus on delivering valuable, data-driven perspectives that empower
             you to make informed strategic choices.
           </p>
-          <button>Get in Touch</button>
+          <HashLink to="/#contact-us" smooth style={{ textDecoration: "none" }}>
+            <button>Get in Touch</button>
+          </HashLink>
         </div>
         <div className="service-img">
-          <img src={img} alt="" />
+          <img src={service4} alt="" />
         </div>
       </section>
       <section id="service2">
         <div className="service-img">
-          <img src={img} alt="" />
+          <img src={service5} alt="" />
         </div>
         <div className="service-text">
           <h1>Financial Modelling and Valuation:</h1>
@@ -76,7 +86,9 @@ const services = () => {
             planning for expansion, investment, or acquisition, our financial
             expertise ensures a solid foundation for strategic decision-making.
           </p>
-          <button>Get in Touch</button>
+          <HashLink to="/#contact-us" smooth style={{ textDecoration: "none" }}>
+            <button>Get in Touch</button>
+          </HashLink>
         </div>
       </section>
       <section id="service2">
@@ -93,15 +105,17 @@ const services = () => {
             goals, whether it's fundraising, partnership development, or
             internal communication.
           </p>
-          <button>Get in Touch</button>
+          <HashLink to="/#contact-us" smooth style={{ textDecoration: "none" }}>
+            <button>Get in Touch</button>
+          </HashLink>
         </div>
         <div className="service-img">
-          <img src={img} alt="" />
+          <img src={service2} alt="" />
         </div>
       </section>
       <section id="service2">
         <div className="service-img">
-          <img src={img} alt="" />
+          <img src={service6} alt="" />
         </div>
         <div className="service-text">
           <h1>Company Due Diligence:</h1>
@@ -117,7 +131,9 @@ const services = () => {
             your interests and enhance the success of your business
             transactions.
           </p>
-          <button>Get in Touch</button>
+          <HashLink to="/#contact-us" smooth style={{ textDecoration: "none" }}>
+            <button>Get in Touch</button>
+          </HashLink>
         </div>
       </section>
       <section id="footer">
