@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./index.css";
-import video from "../img/1.mp4";
+import video from "../img/3.mp4";
 import service1 from "../img/service1.jpg";
 import { FaBusinessTime } from "react-icons/fa6";
 import { GiArchiveResearch } from "react-icons/gi";
@@ -20,7 +20,7 @@ const Home = () => {
 
     emailjs
       .sendForm(
-        "service_muifqqg",
+        "service_ja5nca1",
         "template_hbsabcn",
         form.current,
         "SH_wEedln_lHQZt93"
