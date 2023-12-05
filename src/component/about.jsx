@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from './Header'
-import { HashLink } from "react-router-hash-link";
 import about3 from "../img/about3.jpg"
 import about2 from "../img/about2.jpg";
 
