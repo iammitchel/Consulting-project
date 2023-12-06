@@ -1,9 +1,9 @@
 import React from 'react'
 import Header from './Header'
-import about3 from "../img/about3.jpg"
-import about2 from "../img/about2.jpg";
+// import about3 from "../img/about3.jpg"
+// import about2 from "../img/about2.jpg";
 import about4 from "../img/about4.jpg";
-import about5 from "../img/about5.jpg";
+// import about5 from "../img/about5.jpg";
 
 const about = () => {
   return (
@@ -13,7 +13,35 @@ const about = () => {
         <section id="about1">
           <h1>About Us</h1>
         </section>
-        <section id="about2">
+        <section id='about3' className='section-p1'>
+          <p>
+            Our dynamic team of seasoned professionals is dedicated to
+            delivering unparalleled expertise across a spectrum of consulting
+            services. Our consultants bring a rich tapestry of skills and
+            insights to address the diverse needs of our clients. Our team
+            excels in crafting comprehensive and strategic business plans
+            tailored to each client's unique vision and objectives. From
+            startups seeking funding to established enterprises planning
+            expansion, we leverage our collective experience to provide roadmaps
+            that inspire confidence among stakeholders. <br />
+            Our consultants are adept at delving into market dynamics,
+            competitor landscapes, and emerging trends to provide insightful
+            analyses. Our reports are characterized by meticulous research
+            methodologies, clarity in presentation, and a focus on delivering
+            actionable intelligence that empowers informed decision-making.
+            Navigating the complexities of finance is second nature to our team.
+            We employ advanced financial modeling techniques to create robust
+            projections and conduct precise valuations. <br />
+            Whether you're planning for growth, seeking investment, or
+            evaluating opportunities, our financial experts ensure a solid
+            foundation for strategic decision-making. Our design and content
+            experts collaborate seamlessly to craft engaging and persuasive
+            presentations. Tailored to resonate with your target audience, our
+            presentations go beyond visuals to convey your company's story,
+            vision, and value proposition effectively.
+          </p>
+        </section>
+        {/* <section id="about2">
           <div className="service-img">
             <img src={about3} alt="" />
           </div>
@@ -21,8 +49,7 @@ const about = () => {
             <p>
               Our dynamic team of seasoned professionals is dedicated to
               delivering unparalleled expertise across a spectrum of consulting
-              services. With a collective experience spanning [total years]
-              years, our consultants bring a rich tapestry of skills and
+              services. Our consultants bring a rich tapestry of skills and
               insights to address the diverse needs of our clients. Our team
               excels in crafting comprehensive and strategic business plans
               tailored to each client's unique vision and objectives. From
@@ -64,7 +91,7 @@ const about = () => {
               vision, and value proposition effectively.
             </p>
           </div>
-        </section>
+        </section> */}
         <section id="about2">
           <div className="service-text">
             <p>

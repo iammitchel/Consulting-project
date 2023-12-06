@@ -8,7 +8,7 @@ import { GiArchiveResearch } from "react-icons/gi";
 import { IoIosBusiness } from "react-icons/io";
 import { FcBusinessman } from "react-icons/fc";
 import { TbCalendarDue } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import Header from "./Header";
 
@@ -57,8 +57,8 @@ const Home = () => {
               a large number of industry experts to deliver the best output for
               our client’s requirements <br />
               <br />
-              25 + professional consultants and industry experts 100 +
-              Successful projects 50+ Industries Covered Core values: <br />
+              We have over 25 consultants who have completed over 100 consulting
+              projects across Africa, Europe and Asia <br /> <br /> Core values:
               <br />- Quality services <br /> - Attention to detail <br /> -
               Client satisfaction <br /> - Confidentiality
             </p>
@@ -73,41 +73,61 @@ const Home = () => {
         <div>
           <FaBusinessTime style={style} />
           <h2>Business plan preparation </h2>
-          <Link to="/services">
+          <HashLink
+            to="/services#service2a"
+            smooth
+            style={{ textDecoration: "none" }}
+          >
             <button>Learn More</button>
-          </Link>
+          </HashLink>
         </div>
         <div>
           <GiArchiveResearch style={style} />
           <h2>Research report preparation </h2>
-          <Link to="/services">
+          <HashLink
+            to="/services#service2b"
+            smooth
+            style={{ textDecoration: "none" }}
+          >
             <button>Learn More</button>
-          </Link>
+          </HashLink>
         </div>
         <div>
           <IoIosBusiness style={style} />
           <h2 style={{ marginTop: "70px" }}>
             Financial modelling and valuation{" "}
           </h2>
-          <Link to="/services">
+          <HashLink
+            to="/services#service2c"
+            smooth
+            style={{ textDecoration: "none" }}
+          >
             <button>Learn More</button>
-          </Link>
+          </HashLink>
         </div>
         <div>
           <FcBusinessman style={style} />
           <h2 style={{ marginTop: "70px" }}>
             Investor and corporate presentations{" "}
           </h2>
-          <Link to="/services">
+          <HashLink
+            to="/services#service2d"
+            smooth
+            style={{ textDecoration: "none" }}
+          >
             <button>Learn More</button>
-          </Link>
+          </HashLink>
         </div>
         <div>
           <TbCalendarDue style={style} />
           <h2>Company Due Diligence </h2>
-          <Link to="/services">
+          <HashLink
+            to="/services#service2e"
+            smooth
+            style={{ textDecoration: "none" }}
+          >
             <button>Learn More</button>
-          </Link>
+          </HashLink>
         </div>
       </section>
       <section id="training">
@@ -129,9 +149,7 @@ const Home = () => {
           <h1>Contact Us</h1>
           <p>info@tenfibreconsulting.com</p>
           <p>+234 703 129 2497</p>
-          <p>
-             7, HARUNA STREET, KARU, ABUJA-FCT, Nigeria.
-          </p>
+          <p>7, Haruna Street, Karu, Abuja-FCT, Nigeria.</p>
         </div>
         <div>
           <form ref={form} onSubmit={sendEmail}>

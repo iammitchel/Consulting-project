@@ -16,17 +16,14 @@ const services = () => {
       <section id="service">
         <div className="service-text">
           <h1>Our Services</h1>
-          <p>
-            Cost-effective strategies to achieving <br /> your development
-            milestones
-          </p>
+          <p>Cost-effective services to drive your growth</p>
         </div>
         <div className="service-img">
           <img src={service1} alt="" />
         </div>
       </section>
 
-      <section id="service2">
+      <section id="service2a" className='service2'>
         <div className="service-img">
           <img src={service3} alt="" />
         </div>
@@ -48,7 +45,7 @@ const services = () => {
           </HashLink>
         </div>
       </section>
-      <section id="service2">
+      <section id="service2b" className='service2'>
         <div className="service-text">
           <h1>Research Report Preparation:</h1>
           <p>
@@ -69,7 +66,7 @@ const services = () => {
           <img src={service4} alt="" />
         </div>
       </section>
-      <section id="service2">
+      <section id="service2c" className='service2'>
         <div className="service-img">
           <img src={service5} alt="" />
         </div>
@@ -91,7 +88,7 @@ const services = () => {
           </HashLink>
         </div>
       </section>
-      <section id="service2">
+      <section id="service2d" className='service2'>
         <div className="service-text">
           <h1>Investor and Corporate Presentations:</h1>
           <p>
@@ -113,7 +110,7 @@ const services = () => {
           <img src={service2} alt="" />
         </div>
       </section>
-      <section id="service2">
+      <section id="service2e" className='service2'>
         <div className="service-img">
           <img src={service6} alt="" />
         </div>
