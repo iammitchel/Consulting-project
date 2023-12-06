@@ -273,13 +273,14 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 450px;
 }
 
 #service .service-text{
   background-color: #142474;
   color: #fff;
   width: 50%;
-  height: 50vh;
+  height: 450px;
   padding: 150px 190px;
 }
 
@@ -305,21 +306,22 @@
 
 #service .service-img img{
   width: 100%;
-  height: 50vh;
+  height: 450px;
 }
 
 .service2 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 450px;
 }
 
 .service2 .service-text {
   background-color: #fff;
   color: #1b32a0;
   width: 50%;
-  height: 45vh;
-  padding: 30px 50px;
+  height: 450px;
+  padding: 30px 20px;
 }
 
 .service2 .service-text h1 {
@@ -341,12 +343,13 @@
 
 .service2 .service-img {
   width: 50%;
+  height: 450px;
   /* filter: brightness(30%); */
 }
 
 .service2 .service-img img {
   width: 100%;
-  height: 45vh;
+  height: 450px;
 }
 
 .service2 .service-text button{
@@ -414,7 +417,7 @@
   background-color: #fff;
   color: #142474;
   width: 50%;
-  height: 50vh;
+  height: 450px;
   padding: 150px 190px;
 }
 
@@ -438,7 +441,7 @@
 
 #training .service-img img {
   width: 100%;
-  height: 50vh;
+  height: 650px;
 }
 
 #about2 {
@@ -451,7 +454,7 @@
   background-color: #fff;
   color: #1b32a0;
   width: 50%;
-  height: 50vh;
+  height: 450px;
   padding: 70px 110px;
 }
 
@@ -480,7 +483,7 @@
 
 #about2 .service-img img {
   width: 100%;
-  height: 50vh;
+  height: 450px;
 }
 
 #about3{
