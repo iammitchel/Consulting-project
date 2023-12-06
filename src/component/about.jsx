@@ -13,7 +13,7 @@ const about = () => {
         <section id="about1">
           <h1>About Us</h1>
         </section>
-        <section id='about3' className='section-p1'>
+        <section id="about3" className="section-p1">
           <p>
             Our dynamic team of seasoned professionals is dedicated to
             delivering unparalleled expertise across a spectrum of consulting
@@ -23,22 +23,7 @@ const about = () => {
             tailored to each client's unique vision and objectives. From
             startups seeking funding to established enterprises planning
             expansion, we leverage our collective experience to provide roadmaps
-            that inspire confidence among stakeholders. <br />
-            Our consultants are adept at delving into market dynamics,
-            competitor landscapes, and emerging trends to provide insightful
-            analyses. Our reports are characterized by meticulous research
-            methodologies, clarity in presentation, and a focus on delivering
-            actionable intelligence that empowers informed decision-making.
-            Navigating the complexities of finance is second nature to our team.
-            We employ advanced financial modeling techniques to create robust
-            projections and conduct precise valuations. <br />
-            Whether you're planning for growth, seeking investment, or
-            evaluating opportunities, our financial experts ensure a solid
-            foundation for strategic decision-making. Our design and content
-            experts collaborate seamlessly to craft engaging and persuasive
-            presentations. Tailored to resonate with your target audience, our
-            presentations go beyond visuals to convey your company's story,
-            vision, and value proposition effectively.
+            that inspire confidence among stakeholders.
           </p>
         </section>
         {/* <section id="about2">
@@ -95,17 +80,11 @@ const about = () => {
         <section id="about2">
           <div className="service-text">
             <p>
-              Our consultants specialize in meticulous due diligence, ensuring a
-              comprehensive understanding of potential risks and opportunities.
-              Whether you're considering mergers, acquisitions, or strategic
-              partnerships, our team conducts thorough investigations into
-              legal, financial, and operational aspects, providing you with
-              actionable insights to make informed decisions. Collectively, the
-              team at Ten Fibre Consulting is recognized for its adaptability,
-              precision, and collaborative spirit. We are committed to
-              excellence in every client engagement, leveraging our combined
-              expertise to navigate challenges, seize opportunities, and drive
-              transformative success.
+              Collectively, the team at Ten Fibre Consulting is recognized for
+              its adaptability, precision, and collaborative spirit. We are
+              committed to excellence in every client engagement, leveraging our
+              combined expertise to navigate challenges, seize opportunities,
+              and drive transformative success.
               {/* Whether you're planning for growth, seeking investment, or
             evaluating opportunities, our financial experts ensure a solid
             foundation for strategic decision-making. Our design and content

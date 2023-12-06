@@ -464,12 +464,13 @@
 }
 
 #about2 .service-text p {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 100;
   font-family: 'proxima-nova', sans-serif;
   line-height: 35px;
   margin-bottom: 80px;
   animation: 1s ease-out 0s 1 slideInRight;
+  margin-top: 80px;
 }
 
 #about2 .service-img {
@@ -484,7 +485,7 @@
 
 #about3{
   padding: 50px 180px;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 100;
   font-family: 'proxima-nova', sans-serif;
   line-height: 35px;
@@ -492,4 +493,5 @@
   /* animation: 1s ease-out 0s 1 slideInRight; */
   background-color: #142474;
   color: #fff;
+  text-align: center;
 }
