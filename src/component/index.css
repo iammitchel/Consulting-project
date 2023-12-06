@@ -318,7 +318,7 @@
   background-color: #fff;
   color: #1b32a0;
   width: 50%;
-  height: 70vh;
+  height: 50vh;
   padding: 150px 190px;
 }
 
@@ -331,7 +331,7 @@
 }
 
 #service2 .service-text p {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 100;
   font-family: 'proxima-nova', sans-serif;
   line-height: 30px;
@@ -346,7 +346,7 @@
 
 #service2 .service-img img {
   width: 100%;
-  height: 70vh;
+  height: 50vh;
 }
 
 #service2 .service-text button{
@@ -437,6 +437,47 @@
 }
 
 #training .service-img img {
+  width: 100%;
+  height: 50vh;
+}
+
+#about2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#about2 .service-text {
+  background-color: #fff;
+  color: #1b32a0;
+  width: 50%;
+  height: 50vh;
+  padding: 70px 110px;
+}
+
+#about2 .service-text h1 {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'proxima-nova', sans-serif;
+  margin-bottom: 20px;
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+#about2 .service-text p {
+  font-size: 25px;
+  font-weight: 100;
+  font-family: 'proxima-nova', sans-serif;
+  line-height: 35px;
+  margin-bottom: 80px;
+  animation: 1s ease-out 0s 1 slideInRight;
+}
+
+#about2 .service-img {
+  width: 50%;
+  /* filter: brightness(30%); */
+}
+
+#about2 .service-img img {
   width: 100%;
   height: 50vh;
 }

@@ -130,7 +130,7 @@ const Home = () => {
           <p>info@tenfibreconsulting.com</p>
           <p>+234 703 129 2497</p>
           <p>
-            <b>Address:</b> 7, HARUNA STREET, KARU, ABUJA-FCT, Nigeria.
+             7, HARUNA STREET, KARU, ABUJA-FCT, Nigeria.
           </p>
         </div>
         <div>
