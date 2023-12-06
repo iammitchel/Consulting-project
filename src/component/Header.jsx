@@ -32,7 +32,13 @@ const Header = () => {
             </div>
           </div>
           <div>
-            <button onClick={handleScroll}>Get In Touch</button>
+            <HashLink
+              to="/#contact-us"
+              smooth
+              style={{ textDecoration: "none" }}
+            >
+              <button>Get in Touch</button>
+            </HashLink>
           </div>
         </div>
         <div id="header2">
@@ -46,9 +52,13 @@ const Header = () => {
             <NavLink style={{ textDecoration: "none" }} to="/about">
               <h5>About</h5>
             </NavLink>
-            <HashLink to="/#contact-us" smooth style={{textDecoration:"none"}}>
+            <HashLink
+              to="/#contact-us"
+              smooth
+              style={{ textDecoration: "none" }}
+            >
               <h5>Contact</h5>
-              </HashLink>
+            </HashLink>
 
             {/* <div onClick={handleScroll}
             style={{cursor:'pointer'}}>
