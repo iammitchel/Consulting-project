@@ -7,13 +7,13 @@ import THH from '../img/THH.jpeg'
 import { HashLink } from "react-router-hash-link";
 const Header = () => {
 
-  function handleScroll() {
-    window.scroll({
-      top: document.body.offsetHeight,
-      left: 0,
-      behavior: "smooth",
-    });
-  }
+  // function handleScroll() {
+  //   window.scroll({
+  //     top: document.body.offsetHeight,
+  //     left: 0,
+  //     behavior: "smooth",
+  //   });
+  // }
   return (
     <>
       <section id="header" className="section-p1">
