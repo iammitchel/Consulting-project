@@ -148,10 +148,10 @@ const about = () => {
           <button>Get in Touch</button>
         </HashLink>
       </section> */}
-        <section id="footer">
-          <p>©2023 by Ten Fibre Consulting</p>
-        </section>
       </section>
+      <footer>
+        <p>©2023 by Ten Fibre Consulting</p>
+      </footer>  
     </div>
   );
 }

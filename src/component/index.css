@@ -261,7 +261,7 @@
   color: #fff;
 }
 
-#footer{
+footer{
   background-color: rgb(245, 241, 237);
   padding: 50px;
   text-align: center;
@@ -333,7 +333,7 @@
 }
 
 .service2 .service-text p {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 100;
   font-family: 'proxima-nova', sans-serif;
   line-height: 30px;

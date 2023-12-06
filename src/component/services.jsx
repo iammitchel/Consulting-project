@@ -133,9 +133,9 @@ const services = () => {
           </HashLink>
         </div>
       </section>
-      <section id="footer">
+      <footer>
         <p>©2023 by Ten Fibre Consulting</p>
-      </section>
+      </footer>
     </div>
   );
 }
