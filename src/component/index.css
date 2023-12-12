@@ -138,14 +138,18 @@
 
 #services{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
   padding: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 
 #services div{
   padding: 30px;
-  width: 15%;
+  width: 300px;
+  margin-bottom: 20px;
   height: 450px;
   text-align: center;
   background-color: #fff;
@@ -203,7 +207,7 @@
 
 #contact-us form input{
   background-color: transparent;
-  width: 500px;
+  width: 100%;
   padding: 20px;
   border-right: none;
   border-top: none;
@@ -222,6 +226,7 @@
   font-family: 'proxima-nova', sans-serif;
   padding:10px;
   height: 150px;
+  width: 100%;
 }
 
 ::placeholder{
@@ -497,4 +502,172 @@ footer{
   background-color: #142474;
   color: #fff;
   text-align: center;
+}
+
+@media (max-width:1500px) {
+  #home-info {
+      display: block;
+      justify-content: space-between;
+      height: 1140px;
+    }
+
+    #content {
+      width: 100%; 
+      padding: 30px;
+    }
+    #video video {
+    width: 80vw;  
+    margin-left: 10%;
+    margin-bottom: 300px;
+}
+
+#training .service-text {
+  padding: 85px 59px;
+}
+#contact-us {
+ display: block;
+}
+
+#contact-us .contact-info {
+  margin-bottom: 50px;
+}
+
+#header1 button {
+  margin-bottom: 10px;
+}
+#contact-us form input[type="submit"] {
+  margin-left: 0px;
+}
+
+.service2 .service-text p {
+  font-size: 12px;
+  line-height: 25px;
+}
+.service2 .service-text h1 {
+  font-size: 20px;
+}
+.service2 .service-text {
+  padding: 10px 10px;
+}
+#service .service-text {
+  padding: 50px 90px;
+}
+
+#about3 {
+  padding: 30px 100px;
+}
+
+#about2 .service-text {
+  padding: 10px 10px;
+}
+
+#about2 .service-text p {
+  font-size: 20px;
+}
+
+#about2 .service-img img {
+  height: 400px;
+}
+}
+
+@media (max-width:650px) {
+  .service2 {
+      display: block;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      height: 100%;
+    }
+    .service2 .service-text {
+    width: 100%;
+    height: 350px;
+  }
+    .service2 .service-img {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 10px;
+    }
+    .service2 .service-img img {
+    height: 300px;
+   }
+
+    #service .service-text {
+      height: 300px;
+    }
+    #service .service-img img {
+    height: 300px;
+    }
+    #service {
+    height: 300px;
+    }
+    #service .service-text {
+      padding: 65px 39px;
+    }
+
+    #service .service-text h1 {
+    font-size: 30px;
+    }
+
+    #about2 {
+    display: block;
+  }
+
+    #about2 .service-text {
+      width: 100%;
+      height: 300px;
+    }
+
+    #about2 .service-img {
+    width: 100%;
+    /* filter: brightness(30%); */
+}
+.section-p1 {
+  padding: 10px 20px;
+}
+
+#about3 {
+  padding: 10px 10px;
+}
+}
+
+@media (max-width:400px) {
+  .section-p1 {
+      padding: 4px 8px;
+      margin-bottom: 20px;
+    }
+
+
+#training .service-text {
+  padding: 38px 9px;
+}
+
+#contact-us form input[type="submit"] {
+  margin-left: 0px;
+}
+
+ .service2 .service-text {
+   width: 100%;
+   height: 400px;
+ }
+
+ #service .service-text h1 {
+   font-size: 20px;
+ }
+
+ #service .service-text p {
+   font-size: 13px;
+ }
+
+ #about1 h1 {
+   font-size: 40px;
+ }
+
+ #about3 {
+   font-size: 18px;
+ }
+
+ #contact-us .contact-info h1 {
+   font-size: 35px;
+ }
+
 }

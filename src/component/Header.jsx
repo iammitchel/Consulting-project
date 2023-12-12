@@ -22,7 +22,7 @@ const Header = () => {
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "10px",
+              gap: "25px",
             }}
           >
             <img src={THH} alt="" />
