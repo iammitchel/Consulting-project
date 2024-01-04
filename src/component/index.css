@@ -52,6 +52,10 @@
    /* height: auto; */
  }
 
+ .active{
+  border-bottom: 2px #142474 solid;
+ }
+
  #header1 .text h2{
   color: #142474;
   font-size: 28px;
@@ -251,6 +255,7 @@
   border: none;
   width: 30%;
   margin-left: 350px;
+  margin-right: 100px;
 }
 
 #contact-us button{
@@ -505,6 +510,10 @@ footer{
 }
 
 @media (max-width:1500px) {
+
+  #header1 img{
+    width: 25%;
+  }
   #home-info {
       display: block;
       justify-content: space-between;

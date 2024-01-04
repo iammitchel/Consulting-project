@@ -3,7 +3,7 @@ import "./index.css"
 import { NavLink } from "react-router-dom";
 import { FaLinkedinIn } from "react-icons/fa6";
 import "@fontsource/poppins";
-import THH from '../img/THH.jpeg'
+import TFC from '../img/TFC.jpeg'
 import { HashLink } from "react-router-hash-link";
 const Header = () => {
 
@@ -25,7 +25,7 @@ const Header = () => {
               gap: "25px",
             }}
           >
-            <img src={THH} alt="" />
+            <img src={TFC} alt="" />
             <div className="text">
               <h2> Ten Fibre Consulting</h2>
               <p>Stay ahead with our suite of consulting services</p>
@@ -43,7 +43,10 @@ const Header = () => {
         </div>
         <div id="header2">
           <div className="navbar">
-            <NavLink style={{ textDecoration: "none" }} to="/">
+            <NavLink
+              style={{ textDecoration: "none" }}
+              to="/"
+            >
               <h5>Home</h5>
             </NavLink>
             <NavLink style={{ textDecoration: "none" }} to="/services">
