@@ -147,7 +147,7 @@ const Home = () => {
       <section id="contact-us">
         <div className="contact-info">
           <h1>Contact Us</h1>
-          <p>info@tenfibreconsulting.com</p>
+          <p>info@tenfibre.com</p>
           <p>+234 703 129 2497</p>
           <p>7, Haruna Street, Karu, Abuja-FCT, Nigeria.</p>
         </div>
