@@ -94,7 +94,7 @@ const Home = () => {
         </div>
         <div>
           <IoIosBusiness style={style} />
-          <h2 style={{ marginTop: "70px" }}>
+          <h2 style={{ marginTop: "100px" }}>
             Financial modelling and valuation{" "}
           </h2>
           <HashLink
