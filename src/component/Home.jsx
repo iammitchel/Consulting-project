@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from "react";
+// import emailjs from "@emailjs/browser";
 import "./index.css";
 import video from "../img/3.mp4";
 import service1 from "../img/service1.jpg";
@@ -15,27 +15,50 @@ import Header from "./Header";
 const Home = () => {
   const form = useRef("");
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const [formState, setFormState] = useState({});
 
-    emailjs
-      .sendForm(
-        "service_ja5nca1",
-        "template_hbsabcn",
-        form.current,
-        "SH_wEedln_lHQZt93"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          form.current.reset();
-        },
-        (error) => {
-          console.log(error.text);
-          form.current.reset();
-        }
-      );
-  };
+  const changeHandler = (event) =>{
+    setFormState({...formState, [event.target.name]: event.target.value})
+  }
+
+ 
+
+  const submitHandler = (event) =>{
+    event.preventDefault();
+     const config = {
+       SecureToken: "4992dc8c-84b6-4501-a578-c482e427bf2b",
+       To: "jarod@tenfibre.com",
+       From: formState.email,
+       Subject: `${formState.subject}`,
+      //  Phone: `${formState.number}`,
+       Body: `${formState.message}`,
+     };
+     if(window.Email) {
+      window.Email.send(config).then(() => alert("email sent succesfully"));
+     }
+  }
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm(
+  //       "service_ja5nca1",
+  //       "template_hbsabcn",
+  //       form.current,
+  //       "SH_wEedln_lHQZt93"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //         form.current.reset();
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //         form.current.reset();
+  //       }
+  //     );
+  // };
 
   const style = { fontSize: "680%" };
   return (
@@ -152,17 +175,46 @@ const Home = () => {
           <p>7, Haruna Street, Karu, Abuja-FCT, Nigeria.</p>
         </div>
         <div>
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={form} onSubmit={submitHandler}>
             {/* <label>Name</label> */}
-            <input type="text" name="user_name" placeholder="Name" />
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              onChange={changeHandler}
+              value={formState.name || ""}
+            />
             {/* <label>Email</label> */}
-            <input type="email" name="user_email" placeholder="Email" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              onChange={changeHandler}
+              value={formState.email || ""}
+            />
             {/* <label>Subject</label> */}
-            <input type="text" name="user_subject" placeholder="Subject" />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              onChange={changeHandler}
+              value={formState.subject || ""}
+            />
             {/* <label>Phone</label> */}
-            <input type="phone" name="user_number" placeholder="Phone" />
+            {/* <input
+              type="number"
+              name="number"
+              placeholder="Phone"
+              onChange={changeHandler}
+              value={formState.number || ""}
+            /> */}
             {/* <label>Message</label> */}
-            <textarea name="message" placeholder="Message" />
+            <textarea
+              name="message"
+              placeholder="Message"
+              onChange={changeHandler}
+              value={formState.message || ""}
+            />
             <input type="Submit" value="Send" />
           </form>
           {/* <button>Submit</button> */}
