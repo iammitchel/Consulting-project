@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 // import emailjs from "@emailjs/browser";
 import "./index.css";
 import video from "../img/3.mp4";
@@ -13,7 +13,7 @@ import { HashLink } from "react-router-hash-link";
 import Header from "./Header";
 
 const Home = () => {
-  const form = useRef("");
+  // const form = useRef("");
 
   const [formState, setFormState] = useState({});
 
@@ -23,20 +23,20 @@ const Home = () => {
 
  
 
-  const submitHandler = (event) =>{
-    event.preventDefault();
-     const config = {
-       SecureToken: "4992dc8c-84b6-4501-a578-c482e427bf2b",
-       To: "jarod@tenfibre.com",
-       From: formState.email,
-       Subject: `${formState.subject}`,
-      //  Phone: `${formState.number}`,
-       Body: `${formState.message}`,
-     };
-     if(window.Email) {
-      window.Email.send(config).then(() => alert("email sent succesfully"));
-     }
-  }
+  // const submitHandler = (event) =>{
+  //   event.preventDefault();
+  //    const config = {
+  //      SecureToken: "4992dc8c-84b6-4501-a578-c482e427bf2b",
+  //      To: "jarod@tenfibre.com",
+  //      From: formState.email,
+  //      Subject: `${formState.subject}`,
+  //     //  Phone: `${formState.number}`,
+  //      Body: `${formState.message}`,
+  //    };
+  //    if(window.Email) {
+  //     window.Email.send(config).then(() => alert("email sent succesfully"));
+  //    }
+  // }
 
   // const sendEmail = (e) => {
   //   e.preventDefault();
@@ -175,7 +175,8 @@ const Home = () => {
           <p>7, Haruna Street, Karu, Abuja-FCT, Nigeria.</p>
         </div>
         <div>
-          <form ref={form} onSubmit={submitHandler}>
+          {/* <form ref={form} onSubmit={submitHandler}> */}
+          <form action="" name="contact" method="POST" data-netlify="true">
             {/* <label>Name</label> */}
             <input
               type="text"
