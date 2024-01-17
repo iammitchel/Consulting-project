@@ -176,7 +176,7 @@ const Home = () => {
         </div>
         <div>
           {/* <form ref={form} onSubmit={submitHandler}> */}
-          <form name="contact" netlify>
+          <form method="POST" name="contact" netlify>
             {/* <label>Name</label> */}
             <input
               type="text"
