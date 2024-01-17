@@ -176,14 +176,14 @@ const Home = () => {
         </div>
         <div>
           {/* <form ref={form} onSubmit={submitHandler}> */}
-          <form action="" name="contact" method="POST" data-netlify="true">
+          <form method="POST" name="contact" data-netlify="true">
             {/* <label>Name</label> */}
             <input
               type="text"
               name="name"
               placeholder="Name"
               onChange={changeHandler}
-              value={formState.name || ""}
+              
             />
             {/* <label>Email</label> */}
             <input
@@ -191,7 +191,7 @@ const Home = () => {
               name="email"
               placeholder="Email"
               onChange={changeHandler}
-              value={formState.email || ""}
+          
             />
             {/* <label>Subject</label> */}
             <input
@@ -199,7 +199,7 @@ const Home = () => {
               name="subject"
               placeholder="Subject"
               onChange={changeHandler}
-              value={formState.subject || ""}
+              
             />
             {/* <label>Phone</label> */}
             {/* <input
@@ -214,7 +214,7 @@ const Home = () => {
               name="message"
               placeholder="Message"
               onChange={changeHandler}
-              value={formState.message || ""}
+              // value={formState.message || ""}
             />
             <input type="Submit" value="Send" />
           </form>
