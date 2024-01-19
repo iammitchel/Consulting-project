@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-// import emailjs from "@emailjs/browser";
+import React, { useRef} from "react";
+import emailjs from "@emailjs/browser";
 import "./index.css";
 import video from "../img/3.mp4";
 import service1 from "../img/service1.jpg";
@@ -13,13 +13,16 @@ import { HashLink } from "react-router-hash-link";
 import Header from "./Header";
 
 const Home = () => {
-  // const form = useRef("");
+  const form = useRef("");
 
-  const [formState, setFormState] = useState({});
+  // const [formState, setFormState] = useState({});
 
-  const changeHandler = (event) =>{
-    setFormState({...formState, [event.target.name]: event.target.value})
-  }
+  // const changeHandler = (event) =>{
+  //   setFormState({...formState, [event.target.name]: event.target.value})
+  // }
+  
+
+  
 
  
 
@@ -38,27 +41,27 @@ const Home = () => {
   //    }
   // }
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  //   emailjs
-  //     .sendForm(
-  //       "service_ja5nca1",
-  //       "template_hbsabcn",
-  //       form.current,
-  //       "SH_wEedln_lHQZt93"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         form.current.reset();
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //         form.current.reset();
-  //       }
-  //     );
-  // };
+    emailjs
+      .sendForm(
+        "service_5dlnuaf",
+        "template_hbsabcn",
+        form.current,
+        "SH_wEedln_lHQZt93"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          form.current.reset();
+        }
+      );
+  };
 
   const style = { fontSize: "680%" };
   return (
@@ -175,47 +178,41 @@ const Home = () => {
           <p>7, Haruna Street, Karu, Abuja-FCT, Nigeria.</p>
         </div>
         <div>
-          {/* <form ref={form} onSubmit={submitHandler}> */}
-          <form method="post" name="Contact Form" data-netlify="true">
+          <form ref={form} onSubmit={sendEmail}>
+            {/* <form action="" method="post" name="contact" netlify> */}
             {/* <label>Name</label> */}
             <input
               type="text"
-              name="name"
+              name="user_name"
               placeholder="Name"
-              onChange={changeHandler}
             />
             {/* <label>Email</label> */}
             <input
               type="email"
-              name="email"
+              name="user_email"
               placeholder="Email"
-              onChange={changeHandler}
             />
             {/* <label>Subject</label> */}
             <input
               type="text"
-              name="subject"
+              name="user_subject"
               placeholder="Subject"
-              onChange={changeHandler}
             />
             {/* <label>Phone</label> */}
-            {/* <input
-              type="number"
-              name="number"
+            <input
+              type="phone"
+              name="user_number"
               placeholder="Phone"
-              onChange={changeHandler}
-              value={formState.number || ""}
-            /> */}
+            />
             {/* <label>Message</label> */}
             <textarea
               name="message"
               placeholder="Message"
-              onChange={changeHandler}
               // value={formState.message || ""}
             />
-            <input type="Submit" value="Send" />
+            <input type="submit" value="Send" />
           </form>
-          {/* <button>Submit</button> */}
+           {/* <button>Submit</button> */}
         </div>
       </section>
 
