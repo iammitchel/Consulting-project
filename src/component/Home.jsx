@@ -46,7 +46,7 @@ const Home = () => {
 
     emailjs
       .sendForm(
-        "service_5dlnuaf",
+        "service_mfwxfsn",
         "template_hbsabcn",
         form.current,
         "SH_wEedln_lHQZt93"
